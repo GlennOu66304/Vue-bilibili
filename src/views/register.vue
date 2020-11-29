@@ -1,13 +1,16 @@
 <template>
   <div class="register">
-      1
-
+      <login-top middleTop="注册bilibili"> </login-top>
   </div>
+  
 </template>
 
 <script>
-
+import LoginTop from '@/components/common/LoginTop.vue'
 export default {
+  components:{
+    LoginTop
+  }
  
 }
 </script>
