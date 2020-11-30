@@ -22,14 +22,14 @@ export default {
     methods:{
        handlerulg(){
        const rue = new RegExp(this.rule)
-       console.log(rue);
+      if(rue.test(this.content)){
+          this.$emit('inputChange',this.content)
+      }
     }
     },
     watch:{
         content(){ 
             this.handlerulg()
-        
-
         }
     }
 
