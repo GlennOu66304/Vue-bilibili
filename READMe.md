@@ -135,6 +135,14 @@ Like the code below: need to add extra arrow bracket.
 ```
 <script
 ```
+
+## Vant install:  
+```
+npm i vant -S
+```
+Main refernece:  
+[Vant](https://youzan.github.io/vant/#/en-US/quickstart)  
+
 ## Resource:
 Video: [2020最新Vue项目实战,B站移动端从0到1开发](https://www.bilibili.com/video/BV1vT4y137So?from=search&seid=17762586340653805563)   
 Sourcecode:[Bilibili](https://github.com/githubchx12380/vue-bilibili)   
