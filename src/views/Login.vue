@@ -1,16 +1,9 @@
 <template>
-  <div class="register">
-      <login-top middleTop="注册bilibili"> 
-        <div slot="right" style="font-size:3.611vw" @click="$router.push('/Login')">切换到登陆</div>
-     </login-top>
-
-      <login-text label="姓名" 
-      placeholder="请输入姓名"
-      style='margin:4.167vw 0;'
-      rule='^.{6,16}$'
-      @inputchange='res => model.name = res'
-      /> 
-
+  <div >
+      <login-top middleTop="登陆bilibili"> 
+           <div slot="right" style="font-size:3.611vw" @click="$router.push('/register')">切换到注册</div>
+      </login-top>
+      
       <login-text label="账号" 
       placeholder="请输入账号"
       rule='^.{6,16}$'
@@ -23,7 +16,7 @@
       rule='^.{6,16}$'
       @inputchange='res => model.password = res'
       /> 
-        <login-btn btntext="注册" @registersubmit="registersubmit"></login-btn>
+        <login-btn btntext="登陆" @registersubmit="registersubmit"></login-btn>
   </div>
 
 
@@ -37,7 +30,7 @@ import LoginBtn from '@/components/common/LoginBtn.vue'
 export default {
   data(){
   return {
-  model:{name:'',
+  model:{
    username:'',
    password:''
   }
@@ -51,8 +44,8 @@ export default {
   methods:{
      async registersubmit(){
        let rulg =/^.{6,16}$/
-       if(rulg.test(this.model.name) && rulg.test(this.model.username) && rulg.test(this.model.password)){
-        const res= await this.$http.post('/register',this.model)
+       if(rulg.test(this.model.username) && rulg.test(this.model.password)){
+        const res= await this.$http.post('/Login',this.model)
          this.$msg.fail(res.data.msg)   
          /*..................*/      
        }else{
