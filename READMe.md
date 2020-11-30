@@ -125,7 +125,16 @@ reference:
 1.just head to the node official website to install the latest node version;
 reference:  
 [node Downloads](https://nodejs.org/en/download/)   
-[Upgrading Node.js to latest version](https://stackoverflow.com/questions/10075990/upgrading-node-js-to-latest-version?page=2&tab=votes#tab-top)   
+[Upgrading Node.js to latest version](https://stackoverflow.com/questions/10075990/upgrading-node-js-to-latest-version?page=2&tab=votes#tab-top)  
+
+## Bug:20:5 error Parsing error: end-tag-with-attributes vue/no-parsing-error
+
+You need to go to certain file to check the grammar:
+
+Like the code below: need to add extra arrow bracket.
+```
+<script
+```
 ## Resource:
 Video: [2020最新Vue项目实战,B站移动端从0到1开发](https://www.bilibili.com/video/BV1vT4y137So?from=search&seid=17762586340653805563)   
 Sourcecode:[Bilibili](https://github.com/githubchx12380/vue-bilibili)   
