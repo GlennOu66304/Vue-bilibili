@@ -143,6 +143,13 @@ npm i vant -S
 Main refernece:  
 [Vant](https://youzan.github.io/vant/#/en-US/quickstart)  
 
+## Bug fixng:Cannot find module 'core-js/modules/es6.regexp.to-string' #29
+
+Run the code below to fix this issue:  
+```
+npm i core-js --save 
+```
+[Cannot find module 'core-js/modules/es6.regexp.to-string' #29](https://github.com/TryGhost/gatsby-starter-ghost/issues/29)   
 ## Resource:
 Video: [2020最新Vue项目实战,B站移动端从0到1开发](https://www.bilibili.com/video/BV1vT4y137So?from=search&seid=17762586340653805563)   
 Sourcecode:[Bilibili](https://github.com/githubchx12380/vue-bilibili)   

@@ -4,15 +4,35 @@
       :label="label"
       :type="type"
       :placeholder="placeholder"
-      :rule="rule"      
+       v-model="content"
       />
     </div>
+
     
 </template>
 
 <script>
 export default {
-    props:['label','type','placeholder','rule']
+    data(){
+        return{ 
+            content:''
+        }
+    },
+    props:['label','type','placeholder','rule'],
+    methods:{
+       handlerulg(){
+       const rue = new RegExp(this.rule)
+       console.log(rue);
+    }
+    },
+    watch:{
+        content(){ 
+            this.handlerulg()
+        
+
+        }
+    }
+
     
 }
 </script>

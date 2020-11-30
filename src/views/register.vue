@@ -15,17 +15,22 @@
       type='password'
       rule='^.{6,16}$'
       /> 
+        <login-btn btntext="注册"></login-btn>
   </div>
+
+
 
 </template>
 
 <script>
 import LoginTop from '@/components/common/LoginTop.vue'
 import LoginText from '@/components/common/LoginText.vue'
+import LoginBtn from '@/components/common/LoginBtn.vue'
 export default {
   components:{
     LoginTop,
     LoginText,
+    LoginBtn
   }
  
 }
