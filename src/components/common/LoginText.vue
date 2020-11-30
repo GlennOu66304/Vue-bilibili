@@ -23,7 +23,7 @@ export default {
        handlerulg(){
        const rue = new RegExp(this.rule)
       if(rue.test(this.content)){
-          this.$emit('inputChange',this.content)
+          this.$emit('inputchange',this.content)
       }
     }
     },

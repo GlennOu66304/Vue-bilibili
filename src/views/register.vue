@@ -5,20 +5,22 @@
       placeholder="请输入姓名"
       style='margin:4.167vw 0;'
       rule='^.{6,16}$'
-       @inputChange='res => name = res'
+      @inputchange='res => name = res'
       /> 
+
       <login-text label="账号" 
       placeholder="请输入账号"
       rule='^.{6,16}$'
-      @inputChange='res => username = res'
+      @inputchange='res => username = res'
       /> 
+
       <login-text label="密码"
       placeholder="请输入密码"
       type='password'
       rule='^.{6,16}$'
-      @inputChange='res => password = res'
+      @inputchange='res => password = res'
       /> 
-        <login-btn btntext="注册"></login-btn>
+        <login-btn btntext="注册" @registersubmit="registersubmit"></login-btn>
   </div>
 
 
@@ -43,10 +45,18 @@ export default {
     LoginBtn
   },
   methods:{
-    successIpt(content){
-      this.name = content
-    }
+     registersubmit(){
+       if(this.name && this.username && this.password){
+         this.$http.post('/register',{
+           name:this.name,
+           username:this.username,
+           password:this.password
+         }).then(res =>{
+           
+         })
+       }
+  },
+
   }
- 
 }
 </script>

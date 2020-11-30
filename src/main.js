@@ -4,6 +4,8 @@ import App from './App.vue'
 import router from './router'
 import Vant from 'vant';
 import 'vant/lib/index.css';
+import http from '../http';
+Vue.prototype.$http = http
 Vue.use(Vant);
 
 Vue.config.productionTip = false
