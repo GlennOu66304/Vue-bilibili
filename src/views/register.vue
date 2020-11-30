@@ -45,15 +45,15 @@ export default {
     LoginBtn
   },
   methods:{
-     registersubmit(){
+     async registersubmit(){
        if(this.name && this.username && this.password){
-         this.$http.post('/register',{
+        const res= await this.$http.post('/register',{
            name:this.name,
            username:this.username,
            password:this.password
-         }).then(res =>{
-           
          })
+         console.log(res)
+         console.log('我一定要第二次执行')
        }
   },
 
