@@ -169,6 +169,15 @@ $ npm install axios
  You need to head to the  @inputchange='res => username = res'
  to change the @inputChange to the @inputchange. in the register.vue file.
 
+## router.push
+
+When you want to click the something, then direct to another link. you should start to use the router.push to do that.
+like the code below:  
+```
+ <div slot="right" @click="$router.push('/Login')">切换到登陆</div>
+```
+[router.push(location, onComplete?, onAbort?)](https://router.vuejs.org/guide/essentials/navigation.html)  
+
 
 ## Resource:
 Video: [2020最新Vue项目实战,B站移动端从0到1开发](https://www.bilibili.com/video/BV1vT4y137So?from=search&seid=17762586340653805563)   
