@@ -150,6 +150,26 @@ Run the code below to fix this issue:
 npm i core-js --save 
 ```
 [Cannot find module 'core-js/modules/es6.regexp.to-string' #29](https://github.com/TryGhost/gatsby-starter-ghost/issues/29)   
+
+## Axios
+Install:  
+```
+$ npm install axios
+```
+[axios](https://github.com/axios/axios)   
+ ## Custom event name 'registerSubmit' must be kebab-case 
+
+ You just change the event name are all in lower case
+ like :registerSubmit to registersubmit;    
+ once you change it, then you need check the IP address change and use the new IP address to load the changed website.  
+ [Listen to custom event in Vue.js](https://stackoverflow.com/questions/36156465/listen-to-custom-event-in-vue-js)
+
+ ## Bugfixing: Could not see the data change in the Vue devtool
+
+ You need to head to the  @inputchange='res => username = res'
+ to change the @inputChange to the @inputchange. in the register.vue file.
+
+
 ## Resource:
 Video: [2020最新Vue项目实战,B站移动端从0到1开发](https://www.bilibili.com/video/BV1vT4y137So?from=search&seid=17762586340653805563)   
 Sourcecode:[Bilibili](https://github.com/githubchx12380/vue-bilibili)   
